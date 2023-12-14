@@ -1,0 +1,87 @@
+<html xmlns:th="http://tymeleaf.org">
+    <head>
+        <!--Toda parte não visual do código-->
+        <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+        <link href="Imagens/icone.ico" rel="shortcut icon">
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Título que será mostrado na Aba -->
+        <title>Pereira & Franco - Alfaiataria</title>
+    </head>
+
+    <body class="yyy">
+        <h1 th:text="${mensagem4}"></h1>
+        <header class="xxx">
+            <h2 class="logo2">Pereira & Franco - Alfaiataria</h2>
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="guardaroupa.html">Guarda-Roupa</a>
+                <a href="contato.html">Contato</a>
+                <button class="btnLogin-popup">Login</button>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+            <div class="form-box login">
+                <form action="login" method="get">
+                    <h2>Login</h2>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required id="login" name="login"> 
+                        <label for="login">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required id="senha" name="senha">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Manter conectado</label>
+                        <a href="#" class="Esqueceu">Esqueceu a senha?</a>
+                    </div>
+                    <button type="submit" class="btn" value="Logar">Login</button>
+                    <div class="login-register">
+                        <p class="conta">Não tem uma conta><a href="#" class="register-link">Registre-se</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <form action="login" method="post">
+                <h2>Registrar</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required id="login" name="login">
+                        <label for="login">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required id="senha" name="senha">
+                        <label for="senha">Senha</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Eu concordo com os termos e condições</label>
+                    </div>
+                    <button type="submit" class="btn" value="Cadastrar">Registrar</button>
+                    <div class="login-register">
+                        <p class="conta">Tem uma conta?><a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

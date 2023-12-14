@@ -1,0 +1,491 @@
+
+/*Estilização da fonte do site e as bordas e margens*/
+body{
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Estilização do fundo do conteúdo em marrom*/
+.headerIndex{
+    background-color: #38210b;
+}
+
+/*Uma tentativa e falha de tentar mudar o estilo da letra
+das listas quando passo o mouse por cima*/
+/*nav{
+    text-transform: uppercase;
+}*/
+
+/* Codígo da professora*/
+.navIndex{
+    position: absolute;
+    right: 0;
+    top: 110px;
+}
+/* Modificando uma linha de código específica*/
+.navIndex li{
+    display: inline;  
+    margin: 0 80px 0 0px;
+}
+
+.navIndex a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+}
+.navIndex a:hover{
+    color: rgb(182, 182, 182);
+    text-decoration: underline;
+}
+
+/*Uma tentativa de colocar a imagem de tamanho menor no site*/
+.logo{
+    width: 20%;
+}/*Deu certo*/
+
+.titulo{
+    text-align: center;
+}
+.Princ{
+    position: relative;
+    width: 940px;
+    margin: auto;
+}
+.banner{
+    width: 100%;
+}
+
+/*Sobre a Alfaiataria Pereira e Franco*/
+.maquina{
+    width: 170px;
+    float: left;
+    margin: 0 20px
+}
+.titulo-maquina{
+    text-align: center;
+    clear: left;
+    font-size: 3em;
+    padding-left: 80px;
+}
+.sobre-alfaiataria{
+    background-color: #FFFFFE;
+    width: 90%;
+    padding-left: 80px;
+}
+.titulo-padrao{
+    text-align: center;
+    font-size: 3em;
+    color: black;
+    margin: 0;
+    padding-top: 20px;
+}
+/*Estilização da sessão nosso estabelecimento*/
+.mapa{
+    text-align: center;
+    color: black;
+    background: linear-gradient(#FFFFFE, #38210b) 
+}
+.beneficios{
+    background-color: #38210b;
+}
+.lista-beneficios{
+    list-style: "😎";
+    width:20%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 32.5%;
+}
+.lista-beneficios li{
+    line-height: 1.5;
+    color: whitesmoke;
+}
+.lista-beneficios li:before{
+    content: "🧵"
+}
+.lista-beneficios li:first-child{
+    font-weight: bold;
+}
+.img_beneficios {
+    width: 300px;
+    box-shadow: 10px 10px 5px 0 black;
+    opacity: 1;
+    transition: 400ms;
+}
+.img_beneficios:hover{
+    opacity: 0.7;
+}
+.conteudo-beneficios{
+    width: 100%;
+}
+.video{
+    text-align: center;
+}
+
+/*Estilização do Footer*/
+footer{
+    text-align: center;
+    margin: 0 auto;
+    background: url("bg.webp");
+    padding: 0px 0 20px 0;
+}
+.copyright{
+    font-size: 12px;
+    margin:10px;
+}
+.logo_footer{
+    width: 10%;
+}
+
+
+/*Estilização da aba guarda roupa do nosso site*/
+
+.guarda-roupa{
+    background-color: #FFFFFE;
+    text-align: center;
+    width: 90%;
+}
+
+.titulo-roupa{
+    color: #38210b;
+    font-size: 25px;
+    text-align: left; 
+}
+.produtos{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 150px;
+}
+
+.terno-item img{
+    max-width: 50%;
+
+}
+
+.ternos{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 150px;
+
+}
+
+.terno-item{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 20px;
+    border: 2px inset brown;
+    text-align: center;
+    transition: border-color 0.3s;
+    width: 400px;
+    margin-left: 10%;
+}
+
+.terno-item :hover{
+    border:white;
+}
+
+
+/* Estilização Tela Login */
+
+.yyy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100hv;
+    background: url('fundo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.xxx{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 87%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo2{
+    font-size: 2em;
+    color: #ffff;
+    user-select: none;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #ffff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ffff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #ffff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover{
+    background: #ffff;
+    color: #162938;
+}
+
+.wrapper{
+   position:relative;
+   width: 400px;
+   height: 440px;
+   background: transparent;
+   border: 2px solid rgba(255, 255, 255, .5);
+   border-radius: 20px;
+   backdrop-filter: blur(20px);
+   box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+   display: flex;
+    overflow: hidden;
+    transition: .2s ease;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper.active{
+    height: 520px;
+    display: flex;
+    overflow: hidden;
+    transition: .2s ease;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-box h2{
+    font-size: 2em;
+    color: #497ca5;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+   top: -5px; 
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #692020;
+    line-height: 57px;
+}
+
+.remember-forgot{
+    font-size: .1em;
+    color: #162938;
+    font-weight: 600;
+    margin: -15px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #162938;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #ffff;
+    font-weight: 500;
+}
+.conta{
+    color: #3b688b;
+    text-decoration: none;
+}
+
+.login-register{
+    font-size: .9em;
+    color:#162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a{
+    color: #528dbb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+form{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+form label, form legend, .Esqueceu{
+    display: block;
+    font-size: 15px;
+    margin: 0 0 10px;
+}
+fieldset{
+    width: 75%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 85%;
+}
+.chk{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.enviar:houver{
+    background: darkorange;
+    transform: scale(1,2);
+}

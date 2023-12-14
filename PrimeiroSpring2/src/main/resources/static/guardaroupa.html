@@ -1,0 +1,79 @@
+<html>
+
+    <head>
+        <!--Toda parte não visual do código-->
+        <link href="CSS/estilo.css" rel="stylesheet">
+        <link href="Imagens/icone.ico" rel="shortcut icon">
+        <meta charset="UTF-8" />
+        <!-- Título que será mostrado na Aba -->
+        <title>Pereira & Franco - Alfaiataria</title>
+    </head>
+
+    <body>
+        <header class="headerIndex">
+
+            <!--Cabeçalho do site onde conseguimos transitar entre todas as páginas-->
+
+            <div class="Princ">
+                <!-- Parte textual do site (os títulos são divididos pelo h)-->
+                <!-- "img" junto com "src" add uma imagem selecionada, seja por arquivo ou link da internet.
+                    O "class" criei apenas para poder dar uma identificação para modificar no CSS. 
+                        "title" adiciona um título caso não carregue a imagem -->
+                <img class="Logo" src="Imagens/P-removebg-preview.png" title="Logo">
+                <nav class="navIndex">
+                    <!-- O "ul" cria uma lista e o "li" coloca aquele pontinho na frente dos nomes -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="guardaroupa.html">Guarda-Roupa</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--Conteúdo sobre o Guarda-roupa da empresa-->
+        <main>
+            <section class="guarda-roupa">
+                <h1 class="titulo-roupa">Guarda-roupa da Alfaiataria</h1>
+                <div>
+                    <br>
+                </div>
+                <p class="produtos">Aqui você encontra alguns dos nossos melhores produtos!</p>
+                <div><br><br></div>
+                <ul class="ternos">
+
+                    <li class = "terno-item">
+                        <h1>Terno preto</h1>
+                        <img class="ternopreto" src="Imagens/jovem-empresario-bonito-de-camisa-preta-e-terno-preto.jpg"
+                            title="ternopreto">
+                        <h1>Terno simples all black</h1>
+                        <h1><strong>R$ 16.500</strong></h1>
+                    </li>
+                        
+                    <li class = "terno-item">
+                        <h1><strong>Terno Azul</strong></h1>
+                        <img class="ternoazul"
+                            src="Imagens/modelo-masculino-jovem-empresario-bonito-elegante-de-terno-e-oculos-da-moda-posando-no-estudio.jpg"
+                            title="ternopreto">
+                        <h1><strong>Terno azul com colete</strong></h1>
+                        <h1><strong>R$ 25.000</strong></h1>
+                    </li>
+
+                    <li class = "terno-item">
+                        <h1><strong>Conjunto sem blazer</strong></h1>
+                        <img class="conjunto" src="Imagens/jovem-empresario-bonito-olhando-para-a-camera-isolado-no-branco.jpg"
+                            title="ternopreto">
+                        <h1>Conjunto cinza sem blazer</h1>
+                        <h1><strong>R$ 9.500</strong></h1>
+                    </li>
+                    
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <img src="Imagens/P-removebg-preview.png" alt="Alfaiataria" class="logo_footer">
+            <p class="copyright">&copy;Todos os direitos reservados para Alfaiataria Pereira & Franco</p>
+        </footer>
+    </body>
+
+</html>
